@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -52,6 +53,13 @@ public class SeatingController {
     public ResponseEntity<String> home() {
         logger.info("Accessing home endpoint");
         return ResponseEntity.ok("Welcome to the Seating Arrangement System API!");
+    }
+    @Controller
+    public class WebController {
+        @GetMapping("/")
+        public String home() {
+            return "home";
+        }
     }
 
     @Operation(
