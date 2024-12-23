@@ -61,7 +61,7 @@ public class SeatingController {
             
             Required Excel File Formats:
             1. Students File (columns): Name, RollNumber, Class
-            2. Rooms File (columns): RoomNumber, Capacity, Floor
+            2. Rooms File (columns): RoomNumber, Rows, Columns, Students per unit seat, capacity
             
             Arrangement Types:
             - alphabetical: Arranges students alphabetically by name
