@@ -1,2 +1,0 @@
-build[] = "mvn clean package -DskipTests"
-start = "java -jar target/*.jar"
