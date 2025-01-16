@@ -55,11 +55,11 @@ public class SeatingController {
         return ResponseEntity.ok("Welcome to the Seating Arrangement System API!");
     }
     @Controller
-    public class WebController {
-        @GetMapping("/")
-        public String home() {
-            return "home";
-        }
+        public class WebController {
+            @GetMapping("/")
+            public String index() {
+                return "home";
+            }
     }
 
     @Operation(
